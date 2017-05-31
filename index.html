@@ -19,9 +19,17 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    
+    
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.18.1/css/ol.css" type="text/css"/>
+    <script src="http://openlayers.org/en/v3.18.1/build/ol.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="MyStyle.css" type="text/css">
+    <script src="WebGisClient.js" type="text/javascript"></script>
+    
+    
 </head>
-<body>
+<body onload="init()">
     <br>
     <div class="container">
     <div class="jumbotron">
@@ -33,11 +41,17 @@
     
     <div class="container">
         
+        
+        
+        
         <div class="page-header">
             <h1>Grundlagen</h1>
         </div>
         <h4>Daten: <a target="_blank" href="http://lemnet.org/de/">LEMnet</a></h4>
         <h4>Informationen: <a target="_blank" href="https://de.wikipedia.org/wiki/Stromtankstelle">Wikipedia Stromtankstellen</a></h4>
+        <br>
+        
+        
         
         
         <div class="page-header">
@@ -52,6 +66,49 @@
         <h3>Implementiertes Datenbankmodell:</h3>
         <br>
         <img src="tabels_postgresql.png" class="img-responsive center-block" alt="er modell">
+        <br>
+        
+        
+        
+        
+        <div class="page-header">
+            <h1>Datenerfassung mit Survey123</h1>
+        </div>
+        <br>
+        <img src="survey123.PNG" class="center-block" alt="datenerfassung_survey123" height="400px">
+        <br>
+        
+        
+        
+        
+        <div class="page-header">
+            <h1>Import nach Postgresql + Qualitätsanalyse</h1>
+        </div>
+        <br>
+        
+        <img src="Quality_calculation.PNG" class="img-responsive center-block" alt="datenerfassung_survey123">
+        <br>
+        <img src="Results.PNG" class="img-responsive center-block" alt="datenerfassung_survey123">
+        <br>
+        
+        
+        
+        
+        <div class="page-header">
+            <h1>Web GIS - OpenLayers, WMS</h1>
+        </div>
+        <br>
+        <div id="map" ></div>
+        <br>
+        
+        
+        
+        <div class="page-header">
+            <h1>Räumliche Analyse</h1>
+        </div>
+        <br>
+        <img src="Heatmap_2.PNG" class="img-responsive center-block" alt="datenerfassung_survey123">
+        <br>
         
         
         
