@@ -28,7 +28,7 @@ function init() {
             })
         ],
         view: new ol.View({
-            projection: 'EPSG:4326', // WGS84 Web Mercator
+            //projection: 'EPSG:4326', // WGS84 Web Mercator
             center: ol.proj.fromLonLat([8.51, 47.39]),
             zoom: 12
         }),
